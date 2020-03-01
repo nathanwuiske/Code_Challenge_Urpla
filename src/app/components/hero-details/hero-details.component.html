@@ -1,0 +1,22 @@
+<div class="btn-container">
+  <a class="btn-back" routerLink="/">Back</a>
+</div>
+
+<div *ngIf="hero; then heroFound; else heroNotFound"></div>
+
+<ng-template #heroFound>
+  <div class="hero-details-card">
+    <img src="{{ hero?.photo }}" alt="" />
+    <h1>{{ hero?.name }}</h1>
+    <p>{{ hero?.bio }}</p>
+  </div>
+</ng-template>
+
+<ng-template #heroNotFound>
+  <!--
+  <div class="hero-details-card">
+    <h1>Uh oh!</h1>
+    <p>The requested character was not found!</p>
+  </div>
+  -->
+</ng-template>

@@ -1,0 +1,31 @@
+h1 {
+  padding: 0.5rem;
+}
+
+.btn-back {
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  text-decoration: none;
+  color: #eee;
+  &:hover {
+    transition: all 0.5s;
+    color: #ec1d24;
+    border: 1px solid #ec1d24;
+  }
+}
+
+.btn-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-details-card {
+  text-align: center;
+}
+
+p {
+  margin: auto;
+  padding: 1rem;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,18 @@
+<div *ngIf="!error">
+  <h1>Marvel Characters</h1>
+
+  <div class="hero-grid">
+    <div
+      class="hero-card"
+      *ngFor="let hero of marvelHeroes"
+      [routerLink]="['/details/', hero.id]"
+    >
+      <img src="{{ hero.photo }}" alt="" />
+      <h2>{{ hero.name }}</h2>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="error">
+  <h2>{{ error }}</h2>
+</div>

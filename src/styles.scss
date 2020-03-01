@@ -1,0 +1,31 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+$primary: #ec1d24;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+header {
+  background: $primary;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  margin-left: 1rem;
+  height: 50px;
+}

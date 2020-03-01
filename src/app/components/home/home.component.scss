@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.25rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.hero-card {
+  &:hover {
+    z-index: 100;
+    background: #ec1d24;
+    transition: transform 0.2s;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
+
+.hero-card img {
+  height: 100%;
+  width: 100%;
+}
